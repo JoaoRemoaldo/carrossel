@@ -1,0 +1,108 @@
+@charset "utf-8";
+@font-face {
+
+    font-family:font1;
+    src: url(Freshman.ttf);
+
+}
+
+body{
+
+margin: 0; 
+padding: 0;
+height: 100vh;
+width: 100vw;
+background-color: #c5c5c5;
+
+}
+
+h1{
+   font-family: font1;
+   font: 3em;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}
+.container{
+
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;  /* ele torna possível alterar a posição do container */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/* altera a posição do eixo  */
+}
+
+.navegacal{
+    position: absolute;/* posição em relação ao container  */
+    bottom: 20px;/* distância a partir da base */
+    left: 50%;/* Distância a partir da esquerda */
+ transform: translate(-50%);/* alterar o eixo prinípal */
+ display: flex;/* colocar o conteúdo lado a lado */
+}
+
+.bar{
+    background-color: #f7010180;
+width: 30px; /* largura do indicador */
+height: 5px; /* altura do indicador */
+margin: 6px; /* espaço entre os indicadores */
+transition: .3S; /* transição no hover */
+cursor: pointer; /* ponteiro do mouse */
+
+}
+
+input{
+
+    display: none; /* ocultar as input do tipo radio */
+
+}
+.imagens{
+    display: flex;
+    width: 600%; /* define o tamanho da div imagens  */
+    height: 100%; /* define a altura a div imagens  */
+}
+.imagem{
+    width: 16.6666666667%; /* define a proporção do tamanho de cada imagem em relação ao elemento pai  */
+    transition: .5s; /* efeito na transição das imagens  */
+
+}
+
+.imagem img{
+    width: 100%; /* ajusta o tamanho da imagem dentro do container  */
+    height: 100%; /* ajusta o tamanho da imagem dentro do container  */
+}
+#imagem1:checked ~ .img1{
+
+    margin-left:0 ;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    
+    margin-left: -66.6666666667%
+
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+#imagem5:checked ~.img1{
+    margin-left: -66.6666666667%;
+
+}
+#imagem6:checked ~.img1{
+    margin-left: -83.3333333333%;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
