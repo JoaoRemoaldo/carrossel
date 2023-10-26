@@ -75,7 +75,7 @@ input{
 }
 #imagem1:checked ~ .img1{
 
-    margin-left:0 ;
+    margin-left: 0;
 }
 
 #imagem2:checked ~ .img1{
@@ -84,7 +84,7 @@ input{
 
 #imagem3:checked ~ .img1{
     
-    margin-left: -66.6666666667%
+    margin-left: -33.3333333333%
 
 }
 
